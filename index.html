@@ -5,7 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="calculator">
+      <div class="displayContainer">
+        <div class="displayValue"></div>
+      </div>
+
+      <div class="row">
+        <button>(</button>
+        <button>)</button>
+        <button>%</button>
+        <button>/</button>
+      </div>
+
+      <div class="row">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>*</button>
+      </div>
+      <div class="row">
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>-</button>
+      </div>
+      <div class="row">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>+</button>
+      </div>
+      <div class="row">
+        <button>0</button>
+        <button>.</button>
+        <button>AC</button>
+        <button data-action="backspace">
+          <i class="fa-solid fa-delete-left"></i>
+        </button>
+      </div>
+      <div><button class="equals">=</button></div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/37a7be37c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
