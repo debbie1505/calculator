@@ -75,15 +75,15 @@ btns.forEach(function (btn) {
       }
       displayValue.textContent = expression;
     } else if (btn.textContent === "AC") {
-      // If the button is "C" (clear)
+      // If the button is "AC" (clear)
       expression = "";
       displayValue.textContent = "";
+    } else if (btn.classList === "backspace") {
+      backspace();
     } else if (btn.textContent === "=") {
       const result = operate();
       expression = `${expression}=${result}`;
       displayValue.textContent = result;
-    } else if (btn.dataset.action === "backspace") {
-      backspace();
     } else {
       // If the button is an operator
       if (expression.includes("=")) {
